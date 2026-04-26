@@ -1,0 +1,17 @@
+{
+  "name": "raghav-chadha-predictor",
+  "version": "1.0.0",
+  "description": "Claude AI Political Predictor — Raghav Chadha (Dynamic)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "vercel-build": "echo 'No build step needed'"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "fast-xml-parser": "^4.4.0"
+  }
+}

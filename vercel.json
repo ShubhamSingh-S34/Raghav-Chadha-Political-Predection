@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "functions": {
-    "api/all.js": {
-      "maxDuration": 10
-    }
-  },
-  "rewrites": [
-    { "source": "/api/all", "destination": "/api/all" }
+  "builds": [
+    { "src": "api/all.js", "use": "@vercel/node" },
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "raghav.jpg", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/api/all", "dest": "/api/all.js" },
+    { "src": "/(.*)", "dest": "/$1" }
   ],
   "headers": [
     {
